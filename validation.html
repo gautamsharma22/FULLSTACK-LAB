@@ -1,0 +1,86 @@
+<html>
+<body>
+<script>  
+function validate(){  
+var name=document.myform.name.value;  
+var contact=document.myform.contact.value;  
+var cou=document.myform.course.value;
+var g1=document.myform.gender[0].value;
+var g2=document.myform.gender[1].value;
+  
+if (name==null || name==""){  
+  alert("Name can't be blank");  
+  return false;  
+} if(contact.length<11){  
+  alert("contact must be at least 10 characters long.");  
+  return false;  
+  } 
+ if(cou=="select")
+{
+alert("plz select course");
+return false; 
+} 
+
+ if(g1.checked == false || g2.checked == false)
+{
+alert("plz select course");
+return false; 
+} 
+
+ 
+}
+
+function onlyAlphabets(e, t) {
+
+            try {
+
+                if (window.event) {
+
+                    var charCode = window.event.keyCode;
+
+                }
+
+                else if (e) {
+
+                    var charCode = e.which;
+
+                }
+
+                else { return true; }
+
+                if ((charCode > 64 && charCode < 91) || (charCode > 96 && charCode < 123))
+
+                    return true;
+
+                else
+
+                    return false;
+
+
+            }
+
+            catch (err) {
+
+                alert(err.Description);
+
+            }
+
+        } 
+
+</script>  
+<body>  
+<form name="myform" method="post" 
+onsubmit="return validate()" >  
+Name: <input type="text" name="name" onkeypress="return onlyAlphabets(event,this);" ><br/>  
+Contact: <input type="text" name="contact"><br/>  
+Course:<select name="course">
+<option>select</option>
+<option>BCA</option>
+</select><br/>
+<input type="checkbox" name="gender" value="Male"> Male
+<input type="checkbox" name="gender" value="Female"> Female
+<br/>
+<input type="submit" value="register">  
+</form>  
+</body>
+</html>

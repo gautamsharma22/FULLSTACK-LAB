@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="form1">
+    <label for="Textbox1">Text Box 1</label>
+    <input type="text" id="textbox1">
+    <br>
+    <label for="Textbox2">Text Box 2</label>
+    <input type="text" id="textbox2">
+    <br>
+    <button type="button" onclick="a(this.form)">Copy Values...</button>
+    </form>
+    <script>
+        function a(form1){
+            form1.textbox2.value=form1.textbox1.value;
+        }
+        </script>
+</body>
+</html>

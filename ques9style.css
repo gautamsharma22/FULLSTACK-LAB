@@ -1,0 +1,23 @@
+body{
+    font-size: 30px;
+}
+div > :not(#p1,#p2,#p3,#p4) {
+    background-color: red;
+}
+
+#p1{
+display:inline;
+border: 5px solid blue;
+}
+#p2{
+display: block;
+border: 5px solid blue;
+}
+#p3{
+display:inline-block;
+border: 5px solid blue;
+}
+#p4{
+display:grid;
+border: 5px solid blue;
+}

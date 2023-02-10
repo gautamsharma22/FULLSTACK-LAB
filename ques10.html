@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    #right1 {
+      float: right;
+    }
+    #left1 {
+      float: left;
+    }
+    #n1 {
+      visibility: hidden;
+    }
+    #new {
+      border: 2px solid blue;
+    }
+  </style>
+  <body>
+    <p>
+      <img
+        src="a.jpeg"
+        alt="Good Morning Friends"
+        height="100px"
+        width="100px"
+      />
+      This Image is Default.
+    </p>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <p>
+      <img
+        src="a.jpeg"
+        alt="Good Morning Friends"
+        height="100px"
+        width="100px"
+        id="right1"
+      />
+      This Image is floating Right.
+    </p>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <p id="left1">
+      <img
+        src="a.jpeg"
+        alt="Good Morning Friends"
+        height="100px"
+        width="100px"
+        id="left1"
+      />
+      This Image is floating left.
+    </p>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <p>
+      This paragraph is visible by default. Paragraph below is not visible
+      because its visibility is set to hidden only container division is visible
+      with blue border.
+    </p>
+    <div id="new">
+      <p id="n1">This paragraph is hidden.</p>
+    </div>
+  </body>
+</html>

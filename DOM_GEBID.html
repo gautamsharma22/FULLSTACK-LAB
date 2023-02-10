@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <script>
+    function a() {
+      document.getElementById("v").innerHTML =
+        document.getElementById("course").value;
+    }
+  </script>
+  <body>
+    <table>
+      <select id="course" onchange="a()">
+        <option>BCA</option>
+        <option>MCA</option>
+        <option>MBA</option>
+      </select>
+      <tr>
+        <td>Course you selected is :</td>
+        <td id="v"></td>
+      </tr>
+    </table>
+  </body>
+</html>

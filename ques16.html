@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Question 16</title>
+  </head>
+  <style>
+    body {
+      font-family: "Times New Roman";
+      font-size: 30px;
+    }
+    input {
+      font-size: 30px;
+      align: center;
+    }
+  </style>
+  <body>
+    <script>
+      function a() {
+        let user = "admin";
+        let password = "admin@1234";
+
+        let uname = document.getElementById("uname").value;
+        let pswd = document.getElementById("pswd").value;
+
+        if (uname == user && pswd == password) {
+          alert("Welcom admin");
+        } else {
+          alert("Wrong Credentials");
+        }
+      }
+    </script>
+    <div class="form1">
+      <form name="validation" onsubmit="a()">
+        <label for="name">Enter Username : </label>
+        <input type="text" id="uname" required />
+        <br />
+        <label for="Password">Enter Password : </label>
+        <input type="password" id="pswd" required />
+        <br />
+        <input type="submit" value="Login" />
+      </form>
+    </div>
+  </body>
+</html>

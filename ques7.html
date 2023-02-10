@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      font-size: 40px;
+    }
+    .word::first-letter {
+      font-size: 60px;
+    }
+    .line::first-line {
+      color: red;
+    }
+  </style>
+  <body>
+    <p class="word">
+      As you can see the first letter of this paragraph is large and it is
+      selected by pseudo element [first-letter] CSS selector.
+    </p>
+    <p class="line">
+      As you can see the first line of this paragraph is of red color <br />It
+      is also selected by pseudo element [first-line] CSS selector.
+    </p>
+  </body>
+</html>
